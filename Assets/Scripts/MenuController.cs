@@ -26,6 +26,7 @@ public class MenuController : MonoBehaviour
             {6, "Six" },
             {7, "Seven" },
         };
+        connectNum = 2;
         slider.onValueChanged.AddListener(delegate { ValueChange(); });
         startButton.onClick.AddListener(StartGame);
         quitButton.onClick.AddListener(QuitGame);

@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
                         cameraController.SwitchCamera();
                         currPlayer = !currPlayer;
                         // Check for win
-                        winController.WinCheck(column, numTokens[column], currPlayer, 4);
+                        winController.WinCheck(column, numTokens[column], currPlayer, MenuController.connectNum);
                     }
                     numTokens[column]++;
                 }
